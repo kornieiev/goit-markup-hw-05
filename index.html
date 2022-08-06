@@ -72,7 +72,11 @@
       <section class="section hero">
         <div class="container">
           <h1 class="hero-title" id="studio">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-btn link animate__animated animate__slideInUp">
+          <button
+            type="button"
+            class="hero-btn link animate__animated animate__slideInUp"
+            data-modal-open
+          >
             Замовити послугу
           </button>
         </div>
@@ -433,6 +437,17 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <a href="" class="modal-close-btn"
+            ><svg class="modal-icon" width="18" height="18">
+              <use href="./images/sprite.svg#icon-modal-close"></use></svg
+          ></a>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
