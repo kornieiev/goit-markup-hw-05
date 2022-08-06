@@ -10,20 +10,29 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- https://animate.style/ - animate__flash: -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!---------- HEADER ---------->
     <header class="header">
       <div class="container">
         <nav class="header-nav">
-          <a class="header-logo link" href="./index.html">
+          <a
+            class="header-logo link animate__animated animate__flip animate__delay-2s animate__slow"
+            href="./index.html"
+          >
             Web<span class="header-logo-studio">Studio</span></a
           >
           <ul class="header-list list">
@@ -63,7 +72,9 @@
       <section class="section hero">
         <div class="container">
           <h1 class="hero-title" id="studio">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-btn">Замовити послугу</button>
+          <button type="button" class="hero-btn link animate__animated animate__slideInUp">
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!----- Features ----->
@@ -121,7 +132,9 @@
       <!----- Portfolio ----->
       <section class="section portfolio">
         <div class="container">
-          <h2 class="portfolio-title">Чем мы занимаемся</h2>
+          <h2 class="portfolio-title" data-aos="fade-up" data-aos-duration="1000">
+            Чем мы занимаемся
+          </h2>
           <ul class="portfolio-list list">
             <li class="portfolio-list-title">
               <img
@@ -158,7 +171,7 @@
       <!----- Team ----->
       <section class="section team">
         <div class="container">
-          <h2 class="team-title">Наша команда</h2>
+          <h2 class="team-title" data-aos="fade-up" data-aos-duration="1000">Наша команда</h2>
           <ul class="team-list list">
             <!--  -->
             <li class="team-list-title">
@@ -323,7 +336,9 @@
       <!-- Постійні клієнти -->
       <section class="section clientss">
         <div class="container">
-          <h2 class="clients-title">Постійні клієнти</h2>
+          <h2 class="clients-title" data-aos="fade-up" data-aos-duration="1000">
+            Постійні клієнти
+          </h2>
           <ul class="clients-list list">
             <li class="">
               <a href="" class="clients-link"
@@ -396,7 +411,7 @@
         </div>
 
         <div class="footer-add">
-          <p class="footer-add-title">приєднуйтесь</p>
+          <p class="footer-add-title" data-aos="fade-down-right">приєднуйтесь</p>
           <div class="footer-network">
             <a href="" class="footer-network-add"
               ><svg class="footer-icon instagram" width="20" height="20">
@@ -415,5 +430,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
