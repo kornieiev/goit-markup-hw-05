@@ -777,6 +777,7 @@ div {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  /* pointer-events: none - забирає можливість перекривання і клацання у прозорого модального вікна */
 }
 
 /* тут Данилко розказує про те, як робитианімацію на модальне вікно https://youtu.be/gtG1pi5EwMY?t=6060 */
